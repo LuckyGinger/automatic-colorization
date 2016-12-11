@@ -1,0 +1,11 @@
+#!/bin/bash
+.././calctitles.sh ../../bnw_224x224/10
+.././calctitles.sh ../../bnw_224x224/11
+.././calctitles.sh ../../bnw_224x224/12
+.././calctitles.sh ../../bnw_224x224/13
+.././calctitles.sh ../../bnw_224x224/14
+.././calctitles.sh ../../bnw_224x224/15
+.././calctitles.sh ../../bnw_224x224/16
+.././calctitles.sh ../../bnw_224x224/17
+.././calctitles.sh ../../bnw_224x224/18
+.././calctitles.sh ../../bnw_224x224/19

@@ -1,0 +1,54 @@
+#!/bin/bash
+
+./calctitles.sh ../bnw_224x224/00
+./calctitles.sh ../bnw_224x224/01
+./calctitles.sh ../bnw_224x224/02
+./calctitles.sh ../bnw_224x224/03
+./calctitles.sh ../bnw_224x224/04
+./calctitles.sh ../bnw_224x224/05
+./calctitles.sh ../bnw_224x224/06
+./calctitles.sh ../bnw_224x224/07
+./calctitles.sh ../bnw_224x224/08
+./calctitles.sh ../bnw_224x224/09
+
+./calctitles.sh ../bnw_224x224/10
+./calctitles.sh ../bnw_224x224/11
+./calctitles.sh ../bnw_224x224/12
+./calctitles.sh ../bnw_224x224/13
+./calctitles.sh ../bnw_224x224/14
+./calctitles.sh ../bnw_224x224/15
+./calctitles.sh ../bnw_224x224/16
+./calctitles.sh ../bnw_224x224/17
+./calctitles.sh ../bnw_224x224/18
+./calctitles.sh ../bnw_224x224/19
+./calctitles.sh ../bnw_224x224/20
+
+./calctitles.sh ../bnw_224x224/21
+./calctitles.sh ../bnw_224x224/22
+./calctitles.sh ../bnw_224x224/23
+./calctitles.sh ../bnw_224x224/24
+./calctitles.sh ../bnw_224x224/25
+./calctitles.sh ../bnw_224x224/26
+./calctitles.sh ../bnw_224x224/27
+./calctitles.sh ../bnw_224x224/28
+./calctitles.sh ../bnw_224x224/29
+./calctitles.sh ../bnw_224x224/30
+./calctitles.sh ../bnw_224x224/31
+./calctitles.sh ../bnw_224x224/32
+./calctitles.sh ../bnw_224x224/33
+./calctitles.sh ../bnw_224x224/34
+./calctitles.sh ../bnw_224x224/35
+./calctitles.sh ../bnw_224x224/36
+./calctitles.sh ../bnw_224x224/37
+./calctitles.sh ../bnw_224x224/38
+./calctitles.sh ../bnw_224x224/39
+./calctitles.sh ../bnw_224x224/40
+./calctitles.sh ../bnw_224x224/41
+./calctitles.sh ../bnw_224x224/42
+./calctitles.sh ../bnw_224x224/43
+./calctitles.sh ../bnw_224x224/44
+./calctitles.sh ../bnw_224x224/45
+./calctitles.sh ../bnw_224x224/46
+./calctitles.sh ../bnw_224x224/47
+./calctitles.sh ../bnw_224x224/48
+./calctitles.sh ../bnw_224x224/49
