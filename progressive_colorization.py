@@ -15,7 +15,7 @@ def colorize(paths):
     caffe.set_mode_gpu()
     caffe.set_device(gpu_id)
 
-    for iter in range(370000, 382000, 1000): # change stop number when more snapshots have been saved
+    for iter in range(450000, 455000, 1000): # change stop number when more snapshots have been saved
         # Select desired model
         net = caffe.Net('/mnt/6TB-WD-Black/cs450/repos/colorization/models/colorization_deploy_v2.prototxt',
                         '/mnt/6TB-WD-Black/cs450/repos/colorization/train/models/colornet_iter_'
@@ -40,9 +40,9 @@ def colorize(paths):
 
             # load the original image
             img_rgb = caffe.io.load_image(path)
-            first_height, first_width = img_rgb.shape[:2]
-            if first_height > INPUT_SIZE or first_width > INPUT_SIZE:
-                img_rgb = caffe.io.resize_image(img_rgb, (INPUT_SIZE, INPUT_SIZE)) # in case they are too big
+            # first_height, first_width = img_rgb.shape[:2]
+            # if first_height > INPUT_SIZE or first_width > INPUT_SIZE:
+            #     img_rgb = caffe.io.resize_image(img_rgb, (INPUT_SIZE, INPUT_SIZE)) # in case they are too big
 
             img_lab = color.rgb2lab(img_rgb)  # convert image to lab color space
             img_l = img_lab[:, :, 0]  # pull out L channel
@@ -80,7 +80,7 @@ def colorize(paths):
             # plt.imshow(img_rgb_out)
             # plt.axis('off')
 
-            img_rgb_out = caffe.io.resize_image(img_rgb_out, (first_height, first_width))
+            # img_rgb_out = caffe.io.resize_image(img_rgb_out, (first_height, first_width))
 
             file_name = os.path.basename(path)
             save_path = '/mnt/6TB-WD-Black/cs450/automatic-colorization/SPECIAL_OUT/' + str(iter) + '/' + file_name
