@@ -1,0 +1,17 @@
+#!/bin/bash
+
+model=/home/alanxoc3/Projects/colorization/train/models/colornet_iter_386000.caffemodel
+proto=/home/alanxoc3/Projects/colorization/train/models/model_caffe_info.prototxt
+hull=/home/alanxoc3/Projects/colorization/resources/pts_in_hull.npy
+output=/home/alanxoc3/Projects/colorization/OUT/
+
+if [ -f -a $1 ] ; then
+	python3 colorize.py $@ $output -m $model -p $proto -l $hull 2> /dev/null
+	status=$?
+	if [ $status != 0 ] ; then
+		echo 'There was an error with the classification. Possibly a memory error.'
+	fi
+else
+	echo 'Please provide a valid filename.'
+fi
+
