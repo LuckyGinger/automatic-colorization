@@ -7,10 +7,10 @@
 #   folder every time.
 #  Uncomment the gpu line if you want to use your gpu.
 
-model=/path/to/your/model.caffemodel
+model=models/model.caffemodel
 proto=meta/info.prototext
 hull=meta/hull.npy
-#output=demo/
+output=demo/
 #gpu='-g'
 for last; do true; done # Gets the last argument
 

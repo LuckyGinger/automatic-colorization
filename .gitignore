@@ -2,5 +2,7 @@
 *.tfmodel
 *.JPEG
 *.jpg
-my_colorize
 *.swp
+models/*
+demos/*
+images/*
