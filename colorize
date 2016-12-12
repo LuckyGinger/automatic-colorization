@@ -1,0 +1,27 @@
+#!/bin/bash
+# Bash Script for automatic colorization.
+
+# Replace the model path with your model.
+# And set the output variable to a folder if you want your images in the same
+# folder every time.
+
+model=/path/to/your/model.caffemodel
+proto=meta/info.prototext
+hull=meta/hull.npy
+output= #demo/ # the output directory.
+for last; do true; done # Gets the last argument
+
+if [ -f -n $1 ] ; then
+	if [ -d -n $last ] ; then
+		python3 colorize.py $@ $output -m $model -p $proto -l $hull 2> /dev/null
+		status=$?
+		if [ $status != 0 ] ; then
+			echo 'An error occurred, possibly due to no memory.'
+		fi
+	else
+		echo 'Please specify a directory as the last argument.'
+	fi
+else
+	echo 'Please provide a valid filename.'
+fi
+
