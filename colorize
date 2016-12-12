@@ -14,9 +14,9 @@ hull=meta/hull.npy
 #gpu='-g'
 for last; do true; done # Gets the last argument
 
-if [ -f -n $1 ] ; then
-	if [ -d -n $last ] ; then
-		python3 colorize.py $@ $output -m $model -p $proto -l $hull 2> /dev/null
+if [ -f $1 ] && [ -n "$1" ] ; then
+	if [ -d $last ] && [ -n "$last" ] ; then
+		python3 colorize.py $@ $output -m $model -p $proto -l $hull $gpu 2> /dev/null
 		status=$?
 		if [ $status != 0 ] ; then
 			echo 'An error occurred, possibly due to no memory.'
