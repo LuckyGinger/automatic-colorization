@@ -1,0 +1,4 @@
+https://www.tensorflow.org/versions/r0.11/tutorials/image_recognition/index.html
+http://colah.github.io/posts/2014-07-Conv-Nets-Modular/
+http://deeplearning.net/tutorial/lenet.html
+http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_canny/py_canny.html
